@@ -6,11 +6,13 @@
  */
 int main(void)
 {
-  const char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
-  int i;
-  for (i = 0; i < 26; i++)
-    {
-      putchar(alphabets[i]);
-    }
-  return (0);
+const char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+int i;
+
+for (i = 0; i < 26; i++)
+{
+putchar(alphabets[i]);
+}
+putchar("\n");
+return (0);
 }
