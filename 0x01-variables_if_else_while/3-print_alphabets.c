@@ -14,7 +14,7 @@ for (i = 0; i < 26; i++)
 {
 putchar(alphabets[i]);
 }
-while(letter <= 'Z')
+while (letter <= 'Z')
 {
 putchar(letter);
 letter++;
