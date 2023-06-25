@@ -9,7 +9,7 @@ int main(void)
 const char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
 int i;
 
-for (i = 25; i > 0; i--)
+for (i = 25; i >= 0; i--)
 {
 putchar(alphabets[i]);
 }
