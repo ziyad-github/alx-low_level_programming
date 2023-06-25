@@ -4,8 +4,8 @@
 /* more headers goes there */
 
 /**
- * main - This function shows if a random number is pos or neg
- * Return: 0 on success, non-zero otherwise 
+* main - This function shows if a random number is pos or neg
+* Return: 0 on success, non-zero otherwise 
 */
 int main(void)
 {
