@@ -1,15 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - this function prints numbers
+ * main - this function prints alphabets
  * Return: 0 on success, non-zero otherwise
  */
 int main(void)
 {
-char number = '0';
-while(number <= '9')
+int i;
+
+for (i = 0; i < 10; i++)
 {
-putchar(number);
+putchar(i);
 }
 putchar('\n');
 return (0);
