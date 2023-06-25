@@ -11,7 +11,7 @@ int i;
 
 for (i = 0; i < 26; i++)
 {
-if (i == 4 or i == 15)continue;
+if (i == 4 || i == 15) continue;
 putchar(alphabets[i]);
 }
 putchar('\n');
