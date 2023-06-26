@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints all the alphabets
- *
- * Return: void
+ * print_alphabet - Entry point
+ * Return:0
  */
+
 void print_alphabet(void)
 {
-    const char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
-    int i;
+	char c = 'a';
 
-    for (i = 0; i < 26; i++)
-    {
-        _putchar(alphabets[i]);
-    }
-    _putchar('\n');
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+
+	}
+	_putchar('\n');
+
 }
