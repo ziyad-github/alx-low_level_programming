@@ -1,16 +1,6 @@
 #include "main.h"
 
 /**
- * main - type alphabets
- * Return: 0 on success, non-zero otherwise
- */
-int main(void)
-{
-    print_alphabet();
-    return (0);
-}
-
-/**
  * print_alphabet - prints all the alphabets
  * Return: void
  */
