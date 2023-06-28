@@ -8,7 +8,8 @@
 */
 int print_last_digit(int n)
 {
-	int realn = abs(n) % 10;
+	long abs_n = labs(n);
+	int realn = abs_n % 10;
 
 	_putchar(realn + '0');
 	return (realn);
