@@ -8,9 +8,9 @@ void times_table(void)
 {
 	int horizental, vertical, result;
 
-	for (horizental = 0; horizental < 9; horizental++)
+	for (horizental = 0; horizental <= 9; horizental++)
 	{
-		for (vertical = 0; vertical < 9; vertical++)
+		for (vertical = 0; vertical <= 9; vertical++)
 		{
 			result = horizental * vertical;
 			if (result > 9)
@@ -27,8 +27,10 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 			}
+			
+			if (result <= 9)
+			   _putchar(' ');
 		}
 		_putchar('\n');
 	}
