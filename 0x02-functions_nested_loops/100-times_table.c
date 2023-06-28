@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the tables of n
+ * print_times_table - prints the table of n
  * @n: the number to give off the table
  */
-void print_times_table(int n)
+void print_times_table(void)
 {
         int i, j, k;
 
@@ -21,13 +21,13 @@ void print_times_table(int n)
                                 _putchar(k + '0');
                         }
 
-                        if (k < n && j != 0)
+                        if (k < 10 && j != 0)
                         {
                                 _putchar(',');
                                 _putchar(' ');
                                 _putchar(' ');
                                 _putchar(k + '0');
-                        } else if (k >= n)
+                        } else if (k >= 10)
                         {
                                 _putchar(',');
                                 _putchar(' ');
