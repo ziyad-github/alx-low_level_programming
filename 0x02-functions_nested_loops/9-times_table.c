@@ -29,7 +29,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 			
-			if ((horizental * (vertical + 1)) <= 9)
+			if ((horizental * (vertical + 1)) <= 9 && vertical + 1 != 9)
 			   _putchar(' ');
 		}
 		_putchar('\n');
