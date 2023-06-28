@@ -6,31 +6,32 @@
 */
 void times_table(void)
 {
-	int horizental, vertical, result;
+        int horizental, vertical, result;
 
-	for (horizental = 0; horizental <= 9; horizental++)
-	{
-		for (vertical = 0; vertical <= 9; vertical++)
-		{
-			result = horizental * vertical;
-			if (result > 9)
-			{
-				_putchar('0' + (result / 10));
-				_putchar('0' + (result % 10));
-			}
-			else
-			{
-				_putchar('0' + result);
-			}
+        for (horizental = 0; horizental <= 9; horizental++)
+        {
+                for (vertical = 0; vertical <= 9; vertical++)
+                {
+                        result = horizental * vertical;
+                        if (result > 9)
+                        {
+                                _putchar('0' + (result / 10));
+                                _putchar('0' + (result % 10));
+                        }
+                        else
+                        {
+                                _putchar('0' + result);
+                        }
 
-			if (vertical != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+                        if (vertical != 9)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
 			}
-			if ((horizental * (vertical + 1)) <= 9 && vertical != 9)
+                        if ((horizental * (vertical + 1)) <= 9 && vertical != 9)
+			{
 			   _putchar(' ');
-		}
-		_putchar('\n');
-	}
+			}
+                _putchar('\n');
+        }
 }
