@@ -27,8 +27,7 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-			}
-			
+			}			
 			if ((horizental * (vertical + 1)) <= 9 && vertical != 9)
 			   _putchar(' ');
 		}
