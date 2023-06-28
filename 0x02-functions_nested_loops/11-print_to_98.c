@@ -6,9 +6,9 @@
  */
 void print_to_98(int n)
 {
-	while (n < 98)
+	while (n <= 98)
 	{
-		_putchar('0' + n);
+		printf("%d", n);
 		n++;
 		if (n != 98)
 		{
@@ -19,7 +19,7 @@ void print_to_98(int n)
 
 	while (n > 98)
 	{
-		_putchar('0' + n);
+		printf("%d", n);
 		n--;
 		if (n != 98)
 		{
@@ -27,4 +27,5 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
+	_putchar('\n');
 }
