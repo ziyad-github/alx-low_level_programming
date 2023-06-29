@@ -6,20 +6,15 @@
  */
 int main(void)
 {
-	int n_multiples3 = 1024 / 3;
-	int n_multiples5 = 1024 / 5;
 	int sum = 0;
 	int i;
 
-	for (i = 1; i < n_multiples3; i++)
+	for (i = 1; i < 1024; i++)
 	{
-		sum += i * 3;
+		if (i % 3 == 0 || i % 5 == 0)
+		   sum += i;
 	}
-
-	for (i = 1; i < n_multiples5; i++)
-	{
-		sum += i * 5;
-	}
+	
 	printf("%d\n", sum);
 	return (0);
 }
