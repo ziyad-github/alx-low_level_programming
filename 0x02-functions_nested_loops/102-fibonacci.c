@@ -14,7 +14,7 @@ int main(void)
 	for (i = 1; i < 50; i++)
 	{
 		next_n = n1 + n2;
-		printf("%d, ", next_n);
+		printf("%ld, ", next_n);
 		n1 = n2;
 		n2 = next_n;
 	}
