@@ -11,7 +11,7 @@ int main(void)
 	long int next_n = 0;
 	int i;
 
-	for (i = 1; i < 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		if (i != 50)
 		{
