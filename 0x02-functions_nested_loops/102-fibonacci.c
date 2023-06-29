@@ -13,11 +13,16 @@ int main(void)
 
 	for (i = 1; i < 50; i++)
 	{
+		if (i != 50)
+		{
+			printf("%ld, ", n1);
+		} else
+		{
+			printf("%ld\n", n1);
+		}
 		next_n = n1 + n2;
-		printf("%ld, ", next_n);
 		n1 = n2;
 		n2 = next_n;
 	}
-	putchar('\n');
 	return (0);
 }
