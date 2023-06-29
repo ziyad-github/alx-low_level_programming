@@ -1,10 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * natural - prints the sum of multiples of 3 and 5 before a number n
+ * main - prints the sum of multiples of 3 and 5 before a number n
+ * Return: 0 on success, non-zero otherwise
  */
-void natural(void)
+int main(void)
 {
 	int n_multiples3 = 1024 / 3;
 	int n_multiples5 = 1024 / 5;
@@ -21,4 +21,5 @@ void natural(void)
 		sum += i * 5;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
