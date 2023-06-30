@@ -13,10 +13,11 @@ int main(void)
 
 	while (count < 98)
 	{
-		printf(n1);
+		printf("%d, ", n1);
 		next_n = n1 + n2;
 		n1 = n2;
 		n2 = next_n;
+		count++;
 	} else
 	{
 		printf("\n");
