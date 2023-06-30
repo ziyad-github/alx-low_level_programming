@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long int n1 = 1;
 	unsigned long int n2 = 2;
-	unsigned long int count = 4;
+	int count = 2;
 	unsigned long int next_n;
 
 	while (count < 98)
