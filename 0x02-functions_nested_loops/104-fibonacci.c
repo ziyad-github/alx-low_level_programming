@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long int n1 = 1;
 	unsigned long int n2 = 2;
-	unsigned long int count = 0;
+	unsigned long int count = 2;
 	unsigned long int next_n;
 
 	while (count < 98)
@@ -16,9 +16,6 @@ int main(void)
 		if (count != 98)
 		{
 			printf("%lu, ", n1);
-		} else
-		{
-			printf("\n");
 		}
 		next_n = n1 + n2;
 		n1 = n2;
