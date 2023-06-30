@@ -13,7 +13,7 @@ int main(void)
 
 	while (count < 98)
 	{
-		printf("%d, ", n1);
+		printf("%lu, ", n1);
 		next_n = n1 + n2;
 		n1 = n2;
 		n2 = next_n;
