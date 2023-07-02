@@ -8,9 +8,21 @@ void print_rev(char *str)
 {
 	int i;
 
-	for (i = (_strlen(str) - 1); i >= 0; i--)
+	for (i = (len(str) - 1); i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}
 	_putchar('\n');
+}
+
+int len(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	return (0);
 }
