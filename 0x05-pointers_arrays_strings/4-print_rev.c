@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
+ * print_rev - prints a string
  * @str: pointer of the string
  */
-void _puts(char *str)
+void print_rev(char *str)
 {
 	int i;
 
