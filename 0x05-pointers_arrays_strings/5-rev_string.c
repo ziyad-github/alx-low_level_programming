@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * rev_string - reverse a string and affect it to a pointer
@@ -8,28 +7,23 @@
  */
 void rev_string(char *s)
 {
-	int i = 0;
-	int len, len1;
-	char *str;
+	char tmp;
+	int i, len, len1;
 
-	while (s[i] != '\0')
+	len = 0;
+	len1 = 0;
+
+	while (s[len] != '\0')
 	{
-		i++;
+		len++;
 	}
 
-	len = i;
+	len1 = len - 1;
 
-	str = malloc(sizeof(char) * (len + 1));
-
-	for (i = len - 1; i >= 0; i--)
+	for (i = 0; i < len / 2; i++)
 	{
-		str[len - i - 1] = s[i];
+		tmp = s[i];
+		s[i] = s[len1];
+		s[len1--] = tmp;
 	}
-
-	for (i = 0; i < len; i++)
-	{
-		s[i] = str[i];
-	}
-
-	free(str);
 }
