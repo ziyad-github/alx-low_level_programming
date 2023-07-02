@@ -7,7 +7,7 @@
 * Return: 1 on upper and 0 otherwise
 */
 
-void _isupper(int c)
+int _isupper(int c)
 {
 	if (isupper(c))
 	{
@@ -17,4 +17,6 @@ void _isupper(int c)
 	{
 		return (0);
 	}
+
+	return (0);
 }
