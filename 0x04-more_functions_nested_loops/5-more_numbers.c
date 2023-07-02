@@ -9,7 +9,7 @@ void print_numbers(void)
 {
 	int i; j;
 
-	for (j = 0; i <= 14; i++)
+	for (j = 0; j <= 14; j++)
 	{
 		for (i = 0; i <= 9; i++)
 		{
