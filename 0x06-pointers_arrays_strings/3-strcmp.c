@@ -6,7 +6,7 @@
  * @s2: second string
  * Return: 0 on equal, and difference (-) of strings otherwise
  */
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	while (*s1 == *s2)
 	{
