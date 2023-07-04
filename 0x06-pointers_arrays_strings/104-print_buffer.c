@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_line - prints a line
- * @c: buffer 
- * @s: bytes to 
- * @l: line to print
+ * print_line - prints bytes of a buffer
+ * @c: buffer to print
+ * @s: bytes of buffer
+ * @l: line of buffer
  * Return: void
  */
 
@@ -31,9 +31,8 @@ putchar('.');
 
 /**
  * print_buffer - prints a buffer
- * @b: buffer to print
- * @size: size of the buffer
- *
+ * @b: buffer
+ * @size: size of buffer
  * Return: void
  */
 void print_buffer(char *b, int size)
