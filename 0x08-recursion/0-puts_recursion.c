@@ -1,6 +1,6 @@
-#include "main.h"
+#include <main.h>
 
-/*
+/**
  * _puts_recurions - prints a string
  * @s: string to print 
  */
