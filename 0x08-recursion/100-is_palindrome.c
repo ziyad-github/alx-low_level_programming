@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 	{
 		return (1);
 	}
-	else if ((*s != '\0') && (*s == s[len - 1])
+	else if ((*s != '\0') && (*s == s[len - 1]))
 	{
 		return (is_palindrome(++s));
 	}
