@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _prime(int n, int x);
-
 /**
  * is_prime_number - this function shows if a number is prime or not
  * @n: the number
@@ -9,7 +7,7 @@ int _prime(int n, int x);
  */
 int is_prime_number(int n)
 {
-	if (n <= 1 ||( n % 2 == 0 && n != 2))
+	if (n <= 1 ||(n % 2 == 0 && n != 2))
 	{
 		return (0);
 	}
@@ -33,7 +31,7 @@ int _prime(int n, int x)
 	}
 	else if (n / 2 > x)
 	{
-		return _prime(n, x + 2);
+		return (_prime(n, x + 2));
 	}
 	else
 	{
