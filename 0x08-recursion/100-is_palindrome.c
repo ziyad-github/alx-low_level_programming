@@ -31,7 +31,7 @@ int is_palindrome(char *s)
 	}
 	else if ((*s != '\0') && (*s == s[len - 1]))
 	{
-		printf("Pointer equal to :%s\n", s);
+		s[len - 1] = '\0';
 		return (is_palindrome(++s));
 	}
 	else
