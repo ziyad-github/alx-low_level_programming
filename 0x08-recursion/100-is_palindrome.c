@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen_recursion - size
@@ -22,13 +23,15 @@ int _strlen_recursion(char *s)
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
+	int m = ((len / 2) + 1);
 
-	if (len == 0 || len == 1 || *s == '\0')
+	if (len == 0 || len == 1 || *s == '\0' || (len % 2 != 0 && *s == s[m]))
 	{
 		return (1);
 	}
 	else if ((*s != '\0') && (*s == s[len - 1]))
 	{
+		printf("Pointer equal to :%p\n", s);
 		return (is_palindrome(++s));
 	}
 	else
